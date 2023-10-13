@@ -24,7 +24,7 @@ Partial Class FrmExchange
     Private Sub InitializeComponent()
         LblUsdValue = New Label()
         TxtUsdValue = New TextBox()
-        BtnUpdateUsdRate = New Button()
+        BtnUpdateUsdValue = New Button()
         BtnShowOperations = New Button()
         BtnNewOperation = New Button()
         PanelExchange = New Panel()
@@ -42,7 +42,7 @@ Partial Class FrmExchange
         ' TxtUsdValue
         ' 
         TxtUsdValue.Enabled = False
-        TxtUsdValue.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TxtUsdValue.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         TxtUsdValue.Location = New Point(590, 22)
         TxtUsdValue.Name = "TxtUsdValue"
         TxtUsdValue.ReadOnly = True
@@ -50,14 +50,14 @@ Partial Class FrmExchange
         TxtUsdValue.TabIndex = 4
         TxtUsdValue.TabStop = False
         ' 
-        ' BtnUpdateUsdRate
+        ' BtnUpdateUsdValue
         ' 
-        BtnUpdateUsdRate.Location = New Point(696, 22)
-        BtnUpdateUsdRate.Name = "BtnUpdateUsdRate"
-        BtnUpdateUsdRate.Size = New Size(75, 23)
-        BtnUpdateUsdRate.TabIndex = 8
-        BtnUpdateUsdRate.Text = "Actualizar"
-        BtnUpdateUsdRate.UseVisualStyleBackColor = True
+        BtnUpdateUsdValue.Location = New Point(696, 22)
+        BtnUpdateUsdValue.Name = "BtnUpdateUsdValue"
+        BtnUpdateUsdValue.Size = New Size(75, 23)
+        BtnUpdateUsdValue.TabIndex = 8
+        BtnUpdateUsdValue.Text = "Actualizar"
+        BtnUpdateUsdValue.UseVisualStyleBackColor = True
         ' 
         ' BtnShowOperations
         ' 
@@ -89,7 +89,7 @@ Partial Class FrmExchange
         ' 
         ' FrmExchange
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
         ClientSize = New Size(792, 485)
@@ -97,7 +97,7 @@ Partial Class FrmExchange
         Controls.Add(PanelExchange)
         Controls.Add(BtnNewOperation)
         Controls.Add(BtnShowOperations)
-        Controls.Add(BtnUpdateUsdRate)
+        Controls.Add(BtnUpdateUsdValue)
         Controls.Add(TxtUsdValue)
         Controls.Add(LblUsdValue)
         FormBorderStyle = FormBorderStyle.None
@@ -111,7 +111,7 @@ Partial Class FrmExchange
     End Sub
     Friend WithEvents LblUsdValue As Label
     Friend WithEvents TxtUsdValue As TextBox
-    Friend WithEvents BtnUpdateUsdRate As Button
+    Friend WithEvents BtnUpdateUsdValue As Button
     Friend WithEvents BtnShowOperations As Button
     Friend WithEvents BtnNewOperation As Button
     Friend WithEvents PanelExchange As Panel
