@@ -37,18 +37,20 @@ Partial Class FrmNewOperation
         BtnConfirmOperation.Location = New Point(429, 185)
         BtnConfirmOperation.Name = "BtnConfirmOperation"
         BtnConfirmOperation.Size = New Size(100, 40)
-        BtnConfirmOperation.TabIndex = 22
+        BtnConfirmOperation.TabIndex = 2
         BtnConfirmOperation.Text = "Confirmar operación"
         BtnConfirmOperation.UseVisualStyleBackColor = True
         ' 
         ' TxtArsQuantity
         ' 
         TxtArsQuantity.Anchor = AnchorStyles.None
+        TxtArsQuantity.Enabled = False
         TxtArsQuantity.Location = New Point(429, 144)
         TxtArsQuantity.Name = "TxtArsQuantity"
         TxtArsQuantity.ReadOnly = True
         TxtArsQuantity.Size = New Size(100, 23)
         TxtArsQuantity.TabIndex = 21
+        TxtArsQuantity.TabStop = False
         ' 
         ' LblArsQuantity
         ' 
@@ -76,7 +78,7 @@ Partial Class FrmNewOperation
         TxtUsdQuantity.Location = New Point(215, 144)
         TxtUsdQuantity.Name = "TxtUsdQuantity"
         TxtUsdQuantity.Size = New Size(100, 23)
-        TxtUsdQuantity.TabIndex = 18
+        TxtUsdQuantity.TabIndex = 0
         ' 
         ' BtnCalculateArsQuantity
         ' 
@@ -84,7 +86,7 @@ Partial Class FrmNewOperation
         BtnCalculateArsQuantity.Location = New Point(215, 185)
         BtnCalculateArsQuantity.Name = "BtnCalculateArsQuantity"
         BtnCalculateArsQuantity.Size = New Size(100, 40)
-        BtnCalculateArsQuantity.TabIndex = 17
+        BtnCalculateArsQuantity.TabIndex = 1
         BtnCalculateArsQuantity.Text = "Calcular pago"
         BtnCalculateArsQuantity.UseVisualStyleBackColor = True
         ' 

@@ -42,7 +42,7 @@ Partial Class FrmExchange
         ' TxtUsdValue
         ' 
         TxtUsdValue.Enabled = False
-        TxtUsdValue.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        TxtUsdValue.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TxtUsdValue.Location = New Point(590, 22)
         TxtUsdValue.Name = "TxtUsdValue"
         TxtUsdValue.ReadOnly = True
@@ -55,7 +55,7 @@ Partial Class FrmExchange
         BtnUpdateUsdValue.Location = New Point(696, 22)
         BtnUpdateUsdValue.Name = "BtnUpdateUsdValue"
         BtnUpdateUsdValue.Size = New Size(75, 23)
-        BtnUpdateUsdValue.TabIndex = 8
+        BtnUpdateUsdValue.TabIndex = 2
         BtnUpdateUsdValue.Text = "Actualizar"
         BtnUpdateUsdValue.UseVisualStyleBackColor = True
         ' 
@@ -65,7 +65,7 @@ Partial Class FrmExchange
         BtnShowOperations.Location = New Point(27, 12)
         BtnShowOperations.Name = "BtnShowOperations"
         BtnShowOperations.Size = New Size(96, 42)
-        BtnShowOperations.TabIndex = 9
+        BtnShowOperations.TabIndex = 0
         BtnShowOperations.Text = "Ver historial"
         BtnShowOperations.UseVisualStyleBackColor = True
         ' 
@@ -74,7 +74,7 @@ Partial Class FrmExchange
         BtnNewOperation.Location = New Point(129, 12)
         BtnNewOperation.Name = "BtnNewOperation"
         BtnNewOperation.Size = New Size(96, 42)
-        BtnNewOperation.TabIndex = 11
+        BtnNewOperation.TabIndex = 1
         BtnNewOperation.Text = "Nueva operación"
         BtnNewOperation.UseVisualStyleBackColor = True
         ' 
@@ -89,7 +89,7 @@ Partial Class FrmExchange
         ' 
         ' FrmExchange
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
         ClientSize = New Size(792, 485)
