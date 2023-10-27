@@ -7,6 +7,7 @@
             End If
 
             TxtSurface.Text = Decimal.Parse(TxtWidth.Text.Replace(".", ",")) * Decimal.Parse(TxtLength.Text.Replace(".", ","))
+            ClearForm()
         Catch ex As Exception
             MessageBox.Show("Algo no está bien, revisa que los valores sean correctos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
@@ -15,5 +16,9 @@
     Private Sub ClearForm()
         TxtWidth.Clear()
         TxtLength.Clear()
+    End Sub
+
+    Private Sub FrmSurfaceCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TxtWidth.Focus()
     End Sub
 End Class
