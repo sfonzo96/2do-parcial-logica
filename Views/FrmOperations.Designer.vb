@@ -35,25 +35,28 @@ Partial Class FrmOperations
         DGridOperations.Anchor = AnchorStyles.None
         DGridOperations.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGridOperations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGridOperations.Location = New Point(51, 12)
+        DGridOperations.Location = New Point(58, 16)
+        DGridOperations.Margin = New Padding(3, 4, 3, 4)
         DGridOperations.Name = "DGridOperations"
         DGridOperations.ReadOnly = True
         DGridOperations.RowHeadersVisible = False
+        DGridOperations.RowHeadersWidth = 51
         DGridOperations.RowTemplate.Height = 25
         DGridOperations.ScrollBars = ScrollBars.Vertical
-        DGridOperations.Size = New Size(642, 347)
+        DGridOperations.Size = New Size(734, 463)
         DGridOperations.TabIndex = 0
         DGridOperations.TabStop = False
         ' 
         ' FrmOperations
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSizeMode = AutoSizeMode.GrowAndShrink
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
-        ClientSize = New Size(744, 370)
+        ClientSize = New Size(850, 493)
         Controls.Add(DGridOperations)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
         Name = "FrmOperations"
         Text = "FrmRecord"
         CType(DGridOperations, ComponentModel.ISupportInitialize).EndInit()

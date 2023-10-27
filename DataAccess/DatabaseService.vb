@@ -111,6 +111,7 @@ Public Class DatabaseService
             End Using
         End Using
     End Function
+    'Crea la db en caso de no existir
     Public Shared Sub InitDatabase()
         Try
             If Not DbExists() Then
@@ -122,6 +123,7 @@ Public Class DatabaseService
                 Next
             End If
         Catch ex As Exception
+            'Ante la falla en la creación de la db, sus tablas o registros, se pasa la persistencia al sistema de archivos
             PersistenceSystem = "FILE"
         End Try
     End Sub

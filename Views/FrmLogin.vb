@@ -11,12 +11,8 @@ Public Class FrmLogin
     End Sub
     Private Sub Login(username As String, password As String)
         Try
-            Dim userService
-            If DatabaseService.PersistenceSystem = "SQL" Then
-                userService = New DbUsersDataService()
-            Else
-                userService = New FsUsersDataService()
-            End If
+            Dim userService As IUsersService = DataAccessFactory.CreateUserDataService()
+
             Dim user As User = userService.GetUser(username)
             If user.Username = username AndAlso user.Password = password Then
                 Dim frmMain As New FrmMain()
